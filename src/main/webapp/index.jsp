@@ -17,9 +17,6 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon"><!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]>
-    <script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
@@ -60,15 +57,7 @@
                         <div class="nav-outer">
                             <nav class="nav main-menu">
                                 <ul class="navigation" id="navbar">
-                                    <li class="current dropdown"><span>Home</span>
-                                        <ul>
-                                            <li class="current"><a href="index.jsp">Home Medical</a></li>
-                                            <li><a href="index-2.jsp">Home Clanic</a></li>
-                                            <li><a href="index-3.jsp">Home Dental Care</a></li>
-                                            <li><a href="index-4.jsp">Home Eye Care</a></li>
-                                            <li><a href="index-5.jsp">Home Prenatal care</a></li>
-                                        </ul>
-                                    </li>
+                                    <li class="current"><span>主页</span></li>
                                     <li class="dropdown"><span>Pages</span>
                                         <ul>
                                             <li><a href="about-us.jsp">About Us</a></li>
@@ -99,24 +88,24 @@
                                             <li><a href="department-detail.jsp">Department Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><span>Blog</span>
-                                        <ul>
-                                            <li><a href="blog-checkboard.jsp">Checkerboard</a></li>
-                                            <li><a href="blog-masonry.jsp">Masonry</a></li>
-                                            <li><a href="blog-two-col.jsp">Two Columns</a></li>
-                                            <li><a href="blog-three-col.jsp">Three Colums</a></li>
-                                            <li><a href="blog-four-col-wide.jsp">Four Colums</a></li>
-                                            <li class="dropdown"><span>Post Types</span>
-                                                <ul>
-                                                    <li><a href="blog-post-image.jsp">Image Post</a></li>
-                                                    <li><a href="blog-post-gallery.jsp">Gallery Post</a></li>
-                                                    <li><a href="blog-post-link.jsp">Link Post</a></li>
-                                                    <li><a href="blog-post-audio.jsp">Audio Post</a></li>
-                                                    <li><a href="blog-post-quote.jsp">Quote Post</a></li>
-                                                    <li><a href="blog-post-video.jsp">Video Post</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li><a href="blog.html">博客</a>
+<%--                                        <ul>--%>
+<%--                                            <li><a href="blog-checkboard.jsp">Checkerboard</a></li>--%>
+<%--                                            <li><a href="blog-masonry.jsp">Masonry</a></li>--%>
+<%--                                            <li><a href="blog-two-col.jsp">Two Columns</a></li>--%>
+<%--                                            <li><a href="blog-three-col.jsp">Three Colums</a></li>--%>
+<%--                                            <li><a href="blog-four-col-wide.jsp">Four Colums</a></li>--%>
+<%--                                            <li class="dropdown"><span>Post Types</span>--%>
+<%--                                                <ul>--%>
+<%--                                                    <li><a href="blog-post-image.jsp">Image Post</a></li>--%>
+<%--                                                    <li><a href="blog-post-gallery.jsp">Gallery Post</a></li>--%>
+<%--                                                    <li><a href="blog-post-link.jsp">Link Post</a></li>--%>
+<%--                                                    <li><a href="blog-post-audio.jsp">Audio Post</a></li>--%>
+<%--                                                    <li><a href="blog-post-quote.jsp">Quote Post</a></li>--%>
+<%--                                                    <li><a href="blog-post-video.jsp">Video Post</a></li>--%>
+<%--                                                </ul>--%>
+<%--                                            </li>--%>
+<%--                                        </ul>--%>
                                     </li>
                                     <li class="dropdown"><span>Shop</span>
                                         <ul>
@@ -940,6 +929,7 @@
         </footer>
         <!--End Main Footer -->
     </div><!-- End Page Wrapper -->
+
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <!--Revolution Slider-->
@@ -965,6 +955,13 @@
     <script src="js/owl.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        init();
+        function init(){
+            let token = localStorage.getItem("healthy_care_token")
+            if(token == null) window.location.replace("login.html")
+        }
+    </script>
 </body>
 
 </html>

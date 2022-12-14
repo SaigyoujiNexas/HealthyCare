@@ -1,9 +1,9 @@
 package util
 
+
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapter
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import jdk.incubator.foreign.CLinker.TypeKind
 import java.lang.ref.WeakReference
 
 object MoshiUtil {

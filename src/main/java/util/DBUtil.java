@@ -42,11 +42,11 @@ public class DBUtil
         System.out.println(dbURL);
     }
     public static int runInsert(String sql){
-        var result = -1;
+        int result = -1;
         try{
-            var db  = new DBUtil();
+            DBUtil db  = new DBUtil();
             db.openConnection();
-            var rst = db.getInsertObjectIDs(sql);
+            ResultSet rst = db.getInsertObjectIDs(sql);
             if(rst.first()) result = rst.getInt(1);
             db.close(rst);
             db.close();

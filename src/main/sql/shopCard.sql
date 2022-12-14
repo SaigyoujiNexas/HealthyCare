@@ -13,6 +13,18 @@ CREATE TABLE `customer`(
     PRIMARY KEY (`cus_id`) USING BTREE
 )ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Compact;
 
+drop trigger if exists `customer_register_check`;
+create trigger `customer_register_check` before insert on `customer`
+    for each row
+begin
+    if NEW.telnum<>'' and NEW.telnum in (select telnum from customer)
+        then signal sqlstate '42000' set message_text = '该账户已注册';
+    end if;
+    if NEW.email<>'' and NEW.email in (select email from customer)
+        then signal  sqlstate '42000' set message_text = '该账户已注册';
+    end if;
+end;
+
 DROP TABLE IF EXISTS `shopcard`;
 CREATE TABLE `shopcard`(
     `cus_id` int(11) NOT NULL,

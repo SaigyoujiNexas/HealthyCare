@@ -25,8 +25,8 @@ class CustomerDao: ICustomerDao {
             }
         }catch (e: Throwable){
             e.printStackTrace()
+            return null
         }
-        return null
     }
 
     override fun select(customer_name: String): List<Customer> {
@@ -36,11 +36,14 @@ class CustomerDao: ICustomerDao {
     override fun insert(customer: Customer): Int{
         val sql = customer.run {
             "INSERT INTO customer (cus_name, telnum, email, pwd) " +
-                    "values('$customer_name', '$tel', '$email', '$password')"
+                    "values('$customer_name', ${tel?.let { "'$it'" }?:"null"}, ${email?.let { "'$it'" }?:"null"}, '$password')"
         }
         DBUtil().apply {
             openConnection()
-            return getInsertObjectIDs(sql).let {if(it.first()) it.getInt(1) else -1}
+            return getInsertObjectIDs(sql).let{
+                    if (it.first()) it.getInt(1)
+                    else -1
+                }
         }
     }
 

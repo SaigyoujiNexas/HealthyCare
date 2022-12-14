@@ -3,6 +3,7 @@ package controller;
 
 import entity.Merchandise;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import service.MerchandiseService;
@@ -10,6 +11,7 @@ import service.impl.MerchandiseServiceImpl;
 import java.io.IOException;
 import java.util.List;
 
+@WebServlet(urlPatterns = {"/merchandiseServlet"}, name = "/MerchandiseServlet")
 public class MerchandiseServlet extends BaseServlet {
 
     private MerchandiseService merchandiseService = new MerchandiseServiceImpl();

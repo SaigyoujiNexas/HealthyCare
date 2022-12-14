@@ -1,6 +1,5 @@
 package controller
 
-import com.sun.jna.platform.win32.Advapi32Util.Account
 import jakarta.servlet.annotation.WebServlet
 import jakarta.servlet.http.HttpServlet
 import jakarta.servlet.http.HttpServletRequest
@@ -9,12 +8,12 @@ import service.AccountService
 import util.BaseResponse
 import util.MoshiUtil.toJson
 import util.RequestStatus
-import java.util.Hashtable
-import java.util.concurrent.locks.ReentrantLock
+
 @WebServlet(name = "/AccountServlet", urlPatterns = ["/AccountServlet"])
 class AccountServlet: HttpServlet() {
     override fun doPost(req: HttpServletRequest, resp: HttpServletResponse) {
-        val type = req.getParameter("type")
+        println("Register module get request")
+        val type = req.getParameter("action")
         resp.setHeader("Access-Control-Allow-Origin", "*")
         resp.contentType = "text/html;charset=utf-8"
         when(type.trim()) {
@@ -32,9 +31,11 @@ class AccountServlet: HttpServlet() {
         }
     }
     private fun register(req: HttpServletRequest, resp: HttpServletResponse){
+        println("Register")
         req.apply {
             val name = getParameter("name")
-            val response = getParameter("register_type").let { registerType ->
+            println("register name is $name")
+            val response = getParameter("type").let { registerType ->
                 val (tel, email) = when (registerType) {
                     "tel" -> Pair(getParameter("tel"), null)
                     "email" -> Pair(null, getParameter("email"))
@@ -49,17 +50,20 @@ class AccountServlet: HttpServlet() {
                             data = it.message,
                             message = "register success"
                         )
-                        is RequestStatus.Failed<*>-> BaseResponse(code = 500, data = it.message, message = "register failed")
+                        is RequestStatus.Failed<*>-> BaseResponse(code = 500, data = it.message, message = "注册失败")
                     }.toJson()
                 }
             }
+            println(response)
             resp.writer.apply {
                 write(response)
                 close()
             }
         }
     }
+
     private fun login(req: HttpServletRequest, resp: HttpServletResponse){
+        println("Login")
         val account = req.getParameter("account")
         val password  = req.getParameter("password")
         resp.contentType = "text/html;charset=utf-8"

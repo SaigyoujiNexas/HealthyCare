@@ -111,8 +111,6 @@ public class DBUtil
     public ResultSet getInsertObjectIDs(String insertSql) throws Exception
     {
         ResultSet rst=null;
-        try
-        {
             if(null == conn)
                 throw new Exception("Database not connected!");
 
@@ -120,12 +118,6 @@ public class DBUtil
 
             stmt.executeUpdate(insertSql, Statement.RETURN_GENERATED_KEYS);
             rst=stmt.getGeneratedKeys();
-
-        }
-        catch(SQLException e)
-        {
-            e.printStackTrace();
-        }
         return rst;
     }
 

@@ -23,11 +23,17 @@ class AccountService {
             return RequestStatus.Failed("输入不能为空")
         }
         return Customer(customer_name = name, tel = tel, email = email, password = password).run {
-            val id = customerDao.insert(this)
-            if(id == -1){
-                RequestStatus.Failed("注册失败")
-            }else{
-                RequestStatus.Success(this.copy(customer_id = id))
+            println(this)
+            try {
+                val id = customerDao.insert(this)
+                println(id)
+                if (id == -1) {
+                    RequestStatus.Failed("注册失败")
+                } else {
+                    RequestStatus.Success(this.copy(customer_id = id))
+                }
+            }catch (e: Throwable){
+                RequestStatus.Failed(e.localizedMessage?:e.message)
             }
         }
     }

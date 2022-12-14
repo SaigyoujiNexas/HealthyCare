@@ -1,22 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String basePath = request.getScheme()
-            + "://"
-            + request.getServerName()
-            + ":"
-            + request.getServerPort()
-            + request.getContextPath()
-            + "/";
-
-    pageContext.setAttribute("basePath",basePath);
-%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Medicoz | Health and Medical HTML Template | Login</title><!-- Stylesheets -->
-    <base href="<%=basePath%>">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -24,9 +11,59 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon"><!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]>
-    <script src="js/respond.js"></script><![endif]-->
+    <script>
+        function register(){
+            let name = $("#register_name").val();
+            let account = $("#register_account").val();
+            let passwd = $("#register_password").val();
+            if(!isPhone(account) && isEmail(account)){
+                alert("账号应为手机号或电子邮箱");
+                return;
+            }
+            let request = new XMLHttpRequest();
+            request.open("post", "./AccountServlet", true);
+            request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            request.onreadystatechange = function() {
+                if (request.readyState === 4 && request.status === 200) {
+                    var response = JSON.parse(request.responseText)
+                    if (response.code === 200) {
+                        alert("注册成功");
+                    } else {
+                        alert(response.message + "\n" + response.data)
+                    }}}
+            if(isPhone(account)) request.send("action=register&type=tel&name="+ name + "&tel=" + account + "&password=" + passwd);
+            else request.send("action=register&type=email&name=" + name + "&email" + account + "&password=" + passwd);
+        }
+        function login(){
+            let account = $("#login_account").val()
+            let password = $("#login_password").val()
+            let request = new XMLHttpRequest()
+            if(!isPhone(account) && !isEmail(account)) {alert("账号格式不正确!");return;}
+            request.open("post", "./AccountServlet", true);
+            request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            request.onreadystatechange = function(){
+                if(request.readyState === 4 && request.status === 200){
+                    let response = JSON.parse(request.responseText)
+                    if(response.code === 200){
+                        alert("登陆成功")
+                        localStorage.setItem("token", response.data)
+                    }else{
+                        alert(response.message + "\n" + response.data)
+                    }
+                }
+            }
+            request.send("action=login&account=" + account + "&password=" + password)
+        }
+
+        function isPhone(tel){
+            let reg = /^[1][3,4,5,7,8][0-9]{9}$/;
+            return reg.test(tel);
+        }
+        function isEmail(email){
+            let reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/;
+            return reg.test(email)
+        }
+    </script>
 </head>
 
 <body>
@@ -135,7 +172,7 @@
                                             <li><a href="shop-single.jsp">Shop Single</a></li>
                                             <li><a href="shopping-cart.jsp">Shopping Cart</a></li>
                                             <li><a href="checkout.jsp">Checkout</a></li>
-                                            <li class="current"><a href="login.jsp">Login</a></li>
+                                            <li class="current"><a href="login.html">Login</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.jsp">Contact</a></li>
@@ -241,38 +278,33 @@
                         <div class="login-form">
                             <h2>Login</h2>
                             <!--Login Form-->
-                            <form  action="userServlet" method="post">
-                                <input type="hidden" name="action" value="login" />
-                                <div class="form-group"><label>Username or Email</label><input type="text"
-                                        name="username" placeholder="Name or Email " required></div>
-                                <div class="form-group"><label>Enter Your Password</label><input type="email"
-                                        name="password" placeholder="Password" required></div>
-                                <div class="form-group"><input type="checkbox" name="shipping-option"
-                                        id="account-option-1">&nbsp;<label for="account-option-1">Remember me</label>
-                                </div>
-                                <div class="form-group"><button class="theme-btn btn-style-one" type="submit"
-                                        name="submit-form"><span class="btn-title">LOGIN</span></button></div>
-                                <div class="form-group pass"><a href="#" class="psw">Lost your password?</a></div>
+                            <form>
+                                <div class="form-group"><label>手机号或电子邮件</label><input type="text"
+                                        name="username" id="login_account" required></div>
+                                <div class="form-group"><label>账号密码</label><input type="password"
+                                        name="password" id="login_password" required></div>
+<!--                                <div class="form-group"><input type="checkbox" name="shipping-option"-->
+<!--                                        id="account-option-1">&nbsp;<label for="account-option-1">记住密码</label>-->
+<!--                                </div>-->
                             </form>
+                            <div><button class="theme-btn btn-style-one" onclick="login()"><span class="btn-title">登录</span></button></div>
                         </div>
                         <!--End Login Form -->
                     </div>
                     <div class="column col-lg-6 col-md-6 col-sm-12">
                         <!-- Register Form -->
                         <div class="login-form register-form">
-                            <h2>Register</h2>
+                            <h2>注册</h2>
                             <!--Login Form-->
-                            <form method="post" action="userServlet">
-                                <input type="hidden" name="action" value="regist" />
-                                <div class="form-group"><label>User Name</label><input type="text" name="username"
-                                        placeholder="Your Name" ></div>
-                                <div class="form-group"><label>Email Address</label><input type="email" name="email"
-                                        placeholder="Your Email" ></div>
-                                <div class="form-group"><label>Your Password</label><input type="password"
-                                        name="password" placeholder="Password" required></div>
-                                <div class="form-group text-right"><button class="theme-btn btn-style-one" type="submit"
-                                        name="submit-form"><span class="btn-title">Register</span></button></div>
+                            <form>
+                                <div class="form-group"><label>用户名</label><input type="text" name="username" id="register_name"></div>
+                                <div class="form-group"><label>电话号码或邮箱</label><input type="text" name="account" id="register_account"></div>
+                                <div class="form-group"><label>密码</label><input type="password"
+                                        name="password" id="register_password" required></div>
                             </form>
+
+                            <div class="text-right"><button class="theme-btn btn-style-one" onclick="register()">
+                                <span class="btn-title">注册</span></button></div>
                         </div>
                         <!--End Register Form -->
                     </div>

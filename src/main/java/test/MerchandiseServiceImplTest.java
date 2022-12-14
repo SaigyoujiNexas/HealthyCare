@@ -1,14 +1,12 @@
 package test;
 
-import main.dao.impl.MerchandiseDaoImpl;
-import main.pojo.Merchandise;
-import main.service.impl.MerchandiseServiceImpl;
+import dao.MerchandiseDaoImpl;
+import entity.Merchandise;
 import org.junit.Test;
+import service.impl.MerchandiseServiceImpl;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class MerchandiseServiceImplTest extends MerchandiseDaoImpl {
 

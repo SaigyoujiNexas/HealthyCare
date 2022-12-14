@@ -124,7 +124,7 @@
                                             <li><a href="shop-single.jsp">Shop Single</a></li>
                                             <li><a href="shopping-cart.jsp">Shopping Cart</a></li>
                                             <li><a href="checkout.jsp">Checkout</a></li>
-                                            <li><a href="login.jsp">Login</a></li>
+                                            <li><a href="login.html">Login</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.jsp">Contact</a></li>

@@ -28,20 +28,19 @@
                     <div class="inner-container">
                         <div class="top-left">
                             <ul class="contact-list clearfix">
-                                <li><i class="flaticon-hospital-1"></i>234 Triumph,Los Angeles,<br>California,US </li>
-                                <li><i class="flaticon-back-in-time"></i>Mon - Sat 8.00 - 18.00. <br>Sunday CLOSED</li>
+                                <li><i class="flaticon-hospital-1"></i>西安邮电大学<br>中国西安</li>
+                                <li><i class="flaticon-back-in-time"></i>周一 - 周六 8.00 - 18.00.<br>周末关门</li>
                             </ul>
                         </div>
                         <div class="top-right">
                             <ul class="social-icon-one">
-                                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                <li><a href="#"><span class="fab fa-weixin"></span></a></li>
+                                <li><a href="#"><span class="fab fa-qq"></span></a></li>
+                                <li><a href="#"><span class="fab fa-weibo"></span></a></li>
                             </ul>
-                            <div class="btn-box"><a href="appointment.jsp" id="appointment-btn"
-                                                    class="theme-btn btn-style-three"><span class="btn-title">Appointment</span></a>
-                            </div>
+                            <div class="btn-box"><a class="theme-btn btn-style-three" href="appointment.jsp"
+                                                    id="appointment-btn"><span
+                                    class="btn-title">联系我们</span></a></div>
                         </div>
                     </div>
                 </div>
@@ -59,74 +58,74 @@
                         <div class="nav-outer">
                             <nav class="nav main-menu">
                                 <ul class="navigation" id="navbar">
-                                    <li class="dropdown"><span>Home</span>
-                                        <ul>
-                                            <li><a href="index.jsp">Home Medical</a></li>
-                                            <li><a href="index-2.jsp">Home Clanic</a></li>
-                                            <li><a href="index-3.jsp">Home Dental Care</a></li>
-                                            <li><a href="index-4.jsp">Home Eye Care</a></li>
-                                            <li><a href="index-5.jsp">Home Prenatal care</a></li>
-                                        </ul>
+                                    <li><a href="index.jsp">主页</a>
+                                        <!--                                    <ul>-->
+                                        <!--                                        <li><a href="index.html">主页 医疗</a></li>-->
+                                        <!--                                        <li><a href="index-2.html">主页 门诊</a></li>-->
+                                        <!--                                        <li><a href="index-3.html">主页 牙科护理</a></li>-->
+                                        <!--                                        <li><a href="index-4.html">主页 眼部护理</a></li>-->
+                                        <!--                                        <li><a href="index-5.html">主页 产前护理</a></li>-->
+                                        <!--                                    </ul>-->
                                     </li>
-                                    <li class="dropdown"><span>Pages</span>
+                                    <li class="dropdown"><span>页面</span>
                                         <ul>
-                                            <li><a href="about-us.jsp">About Us</a></li>
-                                            <li><a href="services.jsp">Services</a></li>
-                                            <li><a href="gallery.jsp">Gallery</a></li>
-                                            <li><a href="pricing-table.jsp">Pricing Table</a></li>
-                                            <li><a href="elements.jsp">UI Elements</a></li>
+                                            <li><a href="about-us.jsp">关于我们</a></li>
+                                            <li><a href="services.jsp">服务</a></li>
+                                            <li><a href="gallery.jsp">图片</a></li>
+                                            <li><a href="pricing-table.jsp">价格表</a></li>
+                                            <li><a href="elements.jsp">更多内容</a></li>
                                             <li><a href="coming-soon.jsp">Coming Soon</a></li>
-                                            <li><a href="error-page.jsp">Error 404</a></li>
-                                            <li><a href="terms-and-condition.jsp">Terms and Condition</a></li>
+                                            <li><a href="error-page.jsp">404页面</a></li>
+                                            <li><a href="terms-and-condition.jsp">我们的团队</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><span>Doctors</span>
+                                    <li class="dropdown"><span>医生</span>
                                         <ul>
-                                            <li><a href="doctors.jsp">Doctors</a></li>
-                                            <li><a href="doctor-detail.jsp">Doctor Detail</a></li>
+                                            <li><a href="doctors.jsp">医生简介</a></li>
+                                            <li><a href="doctor-detail.jsp">医生图片</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><span>Departments</span>
+                                    <li class="dropdown"><span>部门</span>
                                         <ul>
-                                            <li><a href="departments.jsp">Departments</a></li>
-                                            <li><a href="department-detail.jsp">Cardiology</a></li>
-                                            <li><a href="department-detail.jsp">Neurology</a></li>
-                                            <li><a href="department-detail.jsp">Urology</a></li>
-                                            <li><a href="department-detail.jsp">Gynecological</a></li>
-                                            <li><a href="department-detail.jsp">Pediatrical</a></li>
-                                            <li><a href="department-detail.jsp">Laboratory</a></li>
-                                            <li><a href="department-detail.jsp">Department Detail</a></li>
+                                            <li><a href="departments.jsp">部门总览</a></li>
+                                            <li><a href="department-detail.jsp">心脏病学</a></li>
+                                            <li><a href="department-detail.jsp">神经学</a></li>
+                                            <li><a href="department-detail.jsp">泌尿科学</a></li>
+                                            <li><a href="department-detail.jsp">妇科</a></li>
+                                            <li><a href="department-detail.jsp">儿科</a></li>
+                                            <li><a href="department-detail.jsp">实验室</a></li>
+                                            <li><a href="department-detail.jsp">部门介绍</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><span>Blog</span>
+                                    <li class="current"><a href="blog.html">博客</a>
+                                        <!--                                    <ul>-->
+                                        <!--                                        <li><a href="blog-checkboard.jsp">棋盘布局</a></li>-->
+                                        <!--                                        <li><a href="blog-masonry.jsp">砌筑布局</a></li>-->
+                                        <!--                                        <li><a href="blog-two-col.jsp">两列布局</a></li>-->
+                                        <!--                                        <li><a href="blog-three-col.jsp">三列布局</a></li>-->
+                                        <!--                                        <li><a href="blog-four-col-wide.jsp">四列布局</a></li>-->
+                                        <!--                                        <li class="dropdown"><span>帖子类型</span>-->
+                                        <!--                                            <ul>-->
+                                        <!--                                                <li><a href="blog.html">图形发送</a></li>-->
+                                        <!--                                                <li><a href="blog-post-gallery.html">图库贴子</a></li>-->
+                                        <!--                                                <li><a href="blog-post-link.html">链接贴子</a></li>-->
+                                        <!--                                                <li><a href="blog-post-audio.html">音频贴子</a></li>-->
+                                        <!--                                                <li><a href="blog-post-quote.html">报价贴子</a></li>-->
+                                        <!--                                                <li><a href="blog-post-video.html">视频贴子</a></li>-->
+                                        <!--                                            </ul>-->
+                                        <!--                                        </li>-->
+                                        <!--                                    </ul>-->
+                                    </li>
+                                    <li class="dropdown"><span>商店</span>
                                         <ul>
-                                            <li><a href="blog-checkboard.jsp">Checkerboard</a></li>
-                                            <li><a href="blog-masonry.jsp">Masonry</a></li>
-                                            <li><a href="blog-two-col.jsp">Two Columns</a></li>
-                                            <li><a href="blog-three-col.jsp">Three Colums</a></li>
-                                            <li><a href="blog-four-col-wide.jsp">Four Colums</a></li>
-                                            <li class="dropdown"><span>Post Types</span>
-                                                <ul>
-                                                    <li><a href="blog-post-image.jsp">Image Post</a></li>
-                                                    <li><a href="blog-post-gallery.jsp">Gallery Post</a></li>
-                                                    <li><a href="blog-post-link.jsp">Link Post</a></li>
-                                                    <li><a href="blog-post-audio.jsp">Audio Post</a></li>
-                                                    <li><a href="blog-post-quote.jsp">Quote Post</a></li>
-                                                    <li><a href="blog-post-video.jsp">Video Post</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="shop.jsp">商店</a></li>
+                                            <li><a href="shop-single.jsp">单个商品</a></li>
+                                            <li><a href="shopping-cart.jsp">购物车</a></li>
+                                            <li><a href="checkout.jsp">结算</a></li>
+                                            <li><a href="login.html">登录</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown current"><span>Shop</span>
-                                        <ul>
-                                            <li><a href="shop.jsp">Shop</a></li>
-                                            <li><a href="shop-single.jsp">Shop Single</a></li>
-                                            <li class="current"><a href="shopping-cart.jsp">Shopping Cart</a></li>
-                                            <li><a href="checkout.jsp">Checkout</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.jsp">Contact</a></li>
+                                    <li><a href="contact.jsp">联系我们</a></li>
                                 </ul>
                             </nav><!-- Main Menu End-->
                             <div class="outer-box">
@@ -344,34 +343,72 @@
                                 <!--Footer Column-->
                                 <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget about-widget">
-                                        <div class="logo"><a href="index.jsp"><img src="images/logo-2.png"
-                                                                                   alt="" /></a></div>
+                                        <div class="logo">
+                                            <a href="index.html"><img src="images/logo-2.png" alt="" /></a>
+                                        </div>
                                         <div class="text">
-                                            <p>Our Clinic has grown to provide a world class facility for the clinic
-                                                advanced restorative. </p>
-                                            <p>We are among the most qualified implant providers in the AUS with over 30
-                                                years of quality training and experience.</p>
+                                            <p>
+
+                                                我们的诊所已经发展成为为诊所提供世界级设施
+
+                                                高级修复剂 .
+                                            </p>
+                                            <p>我们是澳大利亚最合格的植入物提供商之一，拥有超过30家
+
+                                                多年的质量培训和经验.</p>
                                         </div>
                                         <ul class="social-icon-three">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!--Footer Column-->
                                 <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget">
-                                        <h2 class="widget-title">Departments</h2>
+                                        <h2 class="widget-title">部门</h2>
                                         <ul class="user-links">
-                                            <li><a href="#">Surgery & Radiology</a></li>
-                                            <li><a href="#">Family Medicine</a></li>
-                                            <li><a href="#">Women’s Health</a></li>
-                                            <li><a href="#">Optician</a></li>
-                                            <li><a href="#">Pediatrics</a></li>
-                                            <li><a href="#">Dermatology</a></li>
+                                            <li>
+                                                <a href="#">外科与放射学</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">家庭医学</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">女性健康</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">配镜师</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">儿科学</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">皮肤病科</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -384,26 +421,41 @@
                                 <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                     <!--Footer Column-->
                                     <div class="footer-widget recent-posts">
-                                        <h2 class="widget-title">Latest News</h2>
+                                        <h2 class="widget-title">新闻</h2>
                                         <!--Footer Column-->
                                         <div class="widget-content">
                                             <div class="post">
-                                                <div class="thumb"><a href="blog-post-image.jsp"><img
-                                                        src="images/resource/post-thumb-1.jpg" alt=""></a></div>
-                                                <h4><a href="blog-post-image.jsp">Integrative Medicine <Br>& Cancer
-                                                        Treatment.</a></h4><span class="date">July 11,2019</span>
+                                                <div class="thumb">
+                                                    <a href="blog-post-image.html"><img
+                                                            src="images/resource/post-thumb-1.jpg" alt=""></a>
+                                                </div>
+                                                <h4>
+                                                    <a href="blog-post-image.html">整合医学
+                                                        <br>& 癌症治疗.</a>
+                                                </h4>
+                                                <span class="date">7月 11,2019</span>
                                             </div>
                                             <div class="post">
-                                                <div class="thumb"><a href="blog-post-image.jsp"><img
-                                                        src="images/resource/post-thumb-2.jpg" alt=""></a></div>
-                                                <h4><a href="blog-post-image.jsp">Achieving Better <br>Health Care
-                                                        Time.</a></h4><span class="date">August 1,2019</span>
+                                                <div class="thumb">
+                                                    <a href="blog-post-image.html"><img
+                                                            src="images/resource/post-thumb-2.jpg" alt=""></a>
+                                                </div>
+                                                <h4>
+                                                    <a href="blog-post-image.html">获得更好的
+                                                        <br>医护时间.</a>
+                                                </h4>
+                                                <span class="date">8月 1,2019</span>
                                             </div>
                                             <div class="post">
-                                                <div class="thumb"><a href="blog-post-image.jsp"><img
-                                                        src="images/resource/post-thumb-3.jpg" alt=""></a></div>
-                                                <h4><a href="blog-post-image.jsp">Great Health Care <br>For
-                                                        Patients.</a></h4><span class="date">August 1,2019</span>
+                                                <div class="thumb">
+                                                    <a href="blog-post-image.html"><img
+                                                            src="images/resource/post-thumb-3.jpg" alt=""></a>
+                                                </div>
+                                                <h4>
+                                                    <a href="blog-post-image.html">最好的医护
+                                                        <br></a>
+                                                </h4>
+                                                <span class="date">8月 1,2019</span>
                                             </div>
                                         </div>
                                     </div>
@@ -412,26 +464,36 @@
                                 <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                     <!--Footer Column-->
                                     <div class="footer-widget contact-widget">
-                                        <h2 class="widget-title">Contact Us</h2>
+                                        <h2 class="widget-title">联系我们</h2>
                                         <!--Footer Column-->
                                         <div class="widget-content">
                                             <ul class="contact-list">
-                                                <li><span class="icon flaticon-placeholder"></span>
-                                                    <div class="text">2130 Fulton Street San Diego <Br>CA 94117-1080 USA
+                                                <li>
+                                                    <span class="icon flaticon-placeholder"></span>
+                                                    <div class="text">圣地亚哥富尔顿街2130号
+                                                        <br>CA 94117-1080 USA
                                                     </div>
                                                 </li>
-                                                <li><span class="icon flaticon-call-1"></span>
-                                                    <div class="text">Mon to Fri:08:30 - 18:00</div><a
-                                                        href="tel:+89868679575"><strong>+898 68679 575</strong></a>
+                                                <li>
+                                                    <span class="icon flaticon-call-1"></span>
+                                                    <div class="text">周一 至 周五:08:30 - 18:00</div>
+                                                    <a href="tel:+89868679575">
+                                                        <strong>+898 68679 575</strong>
+                                                    </a>
                                                 </li>
-                                                <li><span class="icon flaticon-email"></span>
-                                                    <div class="text">Do you have a Question?<br><a
-                                                            href="mailto:info@gmail.com"><strong>info@gmail.com</strong></a>
+                                                <li>
+                                                    <span class="icon flaticon-email"></span>
+                                                    <div class="text">是否有更多疑惑？<br>
+                                                        <a href="mailto:info@gmail.com">
+                                                            <strong>info@gmail.com</strong>
+                                                        </a>
                                                     </div>
                                                 </li>
-                                                <li><span class="icon flaticon-back-in-time"></span>
-                                                    <div class="text">Mon - Sat 8.00 - 18.00<br><strong>Sunday
-                                                            CLOSED</strong></div>
+                                                <li>
+                                                    <span class="icon flaticon-back-in-time"></span>
+                                                    <div class="text">周一 - Sat 8.00 - 18.00<br>
+                                                        <strong>周日关闭</strong>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -445,20 +507,28 @@
             <!--Footer Bottom-->
             <div class="footer-bottom">
                 <!-- Scroll To Top -->
-                <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span>
+                <div class="scroll-to-top scroll-to-target" data-target="html">
+                    <span class="fa fa-angle-up"></span>
                 </div>
                 <div class="auto-container">
                     <div class="inner-container clearfix">
                         <div class="footer-nav">
                             <ul class="clearfix">
-                                <li><a href="index.jsp">Privacy Policy</a></li>
-                                <li><a href="about-us.jsp">Contact</a></li>
-                                <li><a href="services.jsp">Supplier</a></li>
+                                <li>
+                                    <a href="index.html">隐私政策 </a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">联系</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">供应商</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="copyright-text">
-                            <p>Copyright © 2019 <a href="http://www.bootstrapmb.com/">bootstrapmb</a>All Rights
-                                Reserved.</p>
+                            <p>Copyright 漏 2019
+                                <a href="http://www.bootstrapmb.com/">bootstrapmb</a>All Rights Reserved.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -61,12 +61,27 @@ DROP TABLE IF EXISTS `shopcard`;
 CREATE TABLE `shopcard`(
     `cus_id` int(11) NOT NULL,
     `card_id` int(11) NOT NULL AUTO_INCREMENT,
-    `medicine_id` int(11) NOT NULL,
+    `item_id` int(11) NOT NULL,
     `item_num`  int(11)  DEFAULT 1,
     PRIMARY KEY (`card_id`) USING BTREE,
     INDEX `FK_customer_shopcard`(`cus_id`) USING BTREE,
-    CONSTRAINT `FK_customer_shopcard` FOREIGN KEY (`cus_id`) REFERENCES `customer`(`cus_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+    CONSTRAINT `FK_customer_shopcard` FOREIGN KEY (`cus_id`) REFERENCES `customer`(`cus_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+    constraint `FK_medicine_shopcard` FOREIGN KEY (`item_id`) REFERENCES `merchandise`(item_id) ON DELETE RESTRICT ON UPDATE RESTRICT
 )ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Compact;
+
+drop view if exists `shopcard_view`;
+create view `shopcard_view` as
+    select
+        shopcard.cus_id as cus_id,
+        shopcard.item_id merchandise_id,
+        shopcard.card_id id,
+        shopcard.item_num num,
+        merchandise.item_name as merchandise_name,
+        merchandise.item_price as item_price,
+        merchandise.effect as effect,
+        merchandise.description  as description,
+        merchandise.status as status
+        from shopcard, merchandise where shopcard.item_id = merchandise.item_id;
 
 DROP TABLE IF EXISTS `sale`;
 CREATE TABLE `sale`(

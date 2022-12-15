@@ -1,18 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>HealthyCare</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>HealthyCare Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <url>https://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <kotlin.version>1.7.21</kotlin.version>
+    <kotlin.compiler.jvmTarget>17</kotlin.compiler.jvmTarget>
   </properties>
   <build>
     <finalName>HealthyCare</finalName>
@@ -32,6 +33,7 @@
                 <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
                 <sourceDir>${project.basedir}/src/main/java</sourceDir>
               </sourceDirs>
+              <jvmTarget>17</jvmTarget>
             </configuration>
           </execution>
           <execution>
@@ -42,6 +44,7 @@
                 <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
                 <sourceDir>${project.basedir}/src/test/java</sourceDir>
               </sourceDirs>
+              <jvmTarget>17</jvmTarget>
             </configuration>
           </execution>
         </executions>
@@ -104,12 +107,6 @@
       <groupId>org.mariadb.jdbc</groupId>
       <artifactId>mariadb-java-client</artifactId>
       <version>3.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>compile</scope>
     </dependency>
   </dependencies>
 </project>

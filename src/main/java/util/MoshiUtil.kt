@@ -22,7 +22,7 @@ object MoshiUtil {
         return MOSHI!!.get()!!
     }
     @OptIn(ExperimentalStdlibApi::class)
-    inline fun <reified T> T.toJson(): String{
+    internal inline fun <reified T> T.toJson(): String{
         getMoshiInstance().let {
             val adapter = it.adapter<T>();
             return adapter.toJson(this)

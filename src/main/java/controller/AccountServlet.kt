@@ -58,8 +58,7 @@ class AccountServlet: HttpServlet() {
             resp.writer.apply {
                 write(response)
                 close()
-            }
-        }
+            }}
     }
 
     private fun login(req: HttpServletRequest, resp: HttpServletResponse){

@@ -120,7 +120,7 @@
                                         <ul>
                                             <li><a href="shop.jsp">商店</a></li>
                                             <li><a href="shop-single.jsp">单个商品</a></li>
-                                            <li><a href="shopping-cart.jsp">购物车</a></li>
+                                            <li><a href="shopping-cart.html">购物车</a></li>
                                             <li><a href="checkout.jsp">结算</a></li>
                                             <li><a href="login.html">登录</a></li>
                                         </ul>
@@ -198,7 +198,7 @@
                     </ul>
                     <div class="cart-footer">
                         <div class="shopping-cart-total"><strong>Subtotal:</strong>$90.00</div><a
-                            href="shopping-cart.jsp" class="theme-btn btn-style-three"><span class="btn-title">View
+                            href="shopping-cart.html" class="theme-btn btn-style-three"><span class="btn-title">View
                                 Cart</span></a><a href="checkout.jsp" class="theme-btn btn-style-one"><span
                                 class="btn-title">Checkout</span></a>
                     </div>

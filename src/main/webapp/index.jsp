@@ -93,7 +93,7 @@
                                         <ul>
                                             <li><a href="merchandiseServlet?action=list">商店</a></li>
                                             <li><a href="shop-single.jsp">单个商品</a></li>
-                                            <li><a href="shopping-cart.jsp">购物车</a></li>
+                                            <li><a href="shopping-cart.html">购物车</a></li>
                                             <li><a href="checkout.jsp">结算</a></li>
                                             <li><a href="login.html">登录</a></li>
                                         </ul>

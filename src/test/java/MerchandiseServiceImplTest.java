@@ -1,5 +1,3 @@
-package test;
-
 import dao.MerchandiseDaoImpl;
 import entity.Merchandise;
 import org.junit.Test;

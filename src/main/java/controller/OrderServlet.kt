@@ -4,10 +4,11 @@ import jakarta.servlet.annotation.WebServlet
 import jakarta.servlet.http.HttpServlet
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
-@WebServlet(name = "ShopServlet", urlPatterns = ["/ShopCardServlet"])
-class ShopCardServlet: HttpServlet() {
+
+@WebServlet(name = "OrderServlet", urlPatterns = ["/OrderServlet"])
+class OrderServlet: HttpServlet(){
     override fun doGet(req: HttpServletRequest?, resp: HttpServletResponse?) {
-        super.doGet(req, resp)
+        doPost(req, resp)
     }
 
     override fun doPost(req: HttpServletRequest?, resp: HttpServletResponse?) {

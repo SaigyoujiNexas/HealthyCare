@@ -11,7 +11,7 @@ import service.impl.MerchandiseServiceImpl;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(urlPatterns = {"/merchandiseServlet"}, name = "/MerchandiseServlet")
+@WebServlet(urlPatterns = {"/merchandiseServlet"}, name = "MerchandiseServlet")
 public class MerchandiseServlet extends BaseServlet {
 
     private MerchandiseService merchandiseService = new MerchandiseServiceImpl();

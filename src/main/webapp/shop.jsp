@@ -49,14 +49,14 @@
                 <!-- Main box -->
                 <div class="main-box">
                     <div class="logo-box">
-                        <div class="logo"><a href="index.jsp"><img src="images/logo-9.png" alt="" title=""></a>
+                        <div class="logo"><a href="index.html"><img src="images/logo-9.png" alt="" title=""></a>
                         </div>
                     </div>
                     <!--Nav Box-->
                     <div class="nav-outer">
                         <nav class="nav main-menu">
                             <ul class="navigation" id="navbar">
-                                <li><a href="index.jsp">主页</a>
+                                <li><a href="index.html">主页</a>
                                     <!--                                    <ul>-->
                                     <!--                                        <li><a href="index.html">主页 医疗</a></li>-->
                                     <!--                                        <li><a href="index-2.html">主页 门诊</a></li>-->
@@ -85,7 +85,7 @@
                                 </li>
                                 <li class="dropdown"><span>部门</span>
                                     <ul>
-                                        <li><a href="departments.jsp">部门总览</a></li>
+                                        <li><a href="departments.html">部门总览</a></li>
                                         <li><a href="department-detail.jsp">心脏病学</a></li>
                                         <li><a href="department-detail.jsp">神经学</a></li>
                                         <li><a href="department-detail.jsp">泌尿科学</a></li>
@@ -142,7 +142,7 @@
             <div class="auto-container">
                 <div class="main-box">
                     <div class="logo-box">
-                        <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
                     </div>
                     <!--Keep This Empty / Menu will come through Javascript-->
                 </div>
@@ -150,7 +150,7 @@
         </div><!-- End Sticky Menu -->
         <!-- Mobile Header -->
         <div class="mobile-header">
-            <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="" title=""></a></div>
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
             <!--Nav Box-->
             <div class="nav-outer clearfix">
                 <div class="outer-box">
@@ -231,7 +231,7 @@
             <div class="title-outer">
                 <h1>Our Shop</h1>
                 <ul class="page-breadcrumb">
-                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li>Shop</li>
                 </ul>
             </div>

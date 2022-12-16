@@ -1,6 +1,7 @@
 package dao
 
 import entity.Blog
+import entity.Comment
 import idao.IBlogDao
 import util.DBUtil
 import java.text.SimpleDateFormat
@@ -68,5 +69,9 @@ class BlogDao: IBlogDao {
             }
             list
         }
+    }
+
+    override fun getComments(blog: Blog): List<Comment> {
+        return emptyList()
     }
 }

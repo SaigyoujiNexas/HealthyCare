@@ -1,10 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Medicoz | Health and Medical HTML Template | Departments</title><!-- Stylesheets -->
+    <title>行之 | 你的医疗助手 | 部门</title><!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -12,11 +11,6 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon"><!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]>
-    <script src="js/respond.js"></script><![endif]-->
-</head>
-
 <body>
     <div class="page-wrapper">
         <!-- Preloader -->
@@ -51,77 +45,30 @@
                     <!-- Main box -->
                     <div class="main-box">
                         <div class="logo-box">
-                            <div class="logo"><a href="index.jsp"><img src="images/logo-9.png" alt="" title=""></a>
+                            <div class="logo"><a href="index.html"><img src="images/logo-9.png" alt="" title=""></a>
                             </div>
                         </div>
                         <!--Nav Box-->
                         <div class="nav-outer">
                             <nav class="nav main-menu">
                                 <ul class="navigation" id="navbar">
-                                    <li><a href="index.jsp">主页</a>
-                                        <!--                                    <ul>-->
-                                        <!--                                        <li><a href="index.html">主页 医疗</a></li>-->
-                                        <!--                                        <li><a href="index-2.html">主页 门诊</a></li>-->
-                                        <!--                                        <li><a href="index-3.html">主页 牙科护理</a></li>-->
-                                        <!--                                        <li><a href="index-4.html">主页 眼部护理</a></li>-->
-                                        <!--                                        <li><a href="index-5.html">主页 产前护理</a></li>-->
-                                        <!--                                    </ul>-->
-                                    </li>
-                                    <li class="dropdown"><span>页面</span>
+                                    <li><a href="index.html">主页</a></li>
+                                    <li class="dropdown"><span>关于</span>
                                         <ul>
                                             <li><a href="about-us.jsp">关于我们</a></li>
                                             <li><a href="services.jsp">服务</a></li>
-                                            <li><a href="gallery.jsp">图片</a></li>
-                                            <li><a href="pricing-table.jsp">价格表</a></li>
                                             <li><a href="elements.jsp">更多内容</a></li>
-                                            <li><a href="coming-soon.jsp">Coming Soon</a></li>
-                                            <li><a href="error-page.jsp">404页面</a></li>
                                             <li><a href="terms-and-condition.jsp">我们的团队</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><span>医生</span>
-                                        <ul>
-                                            <li><a href="doctors.jsp">医生简介</a></li>
-                                            <li><a href="doctor-detail.jsp">医生图片</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><span>部门</span>
-                                        <ul>
-                                            <li><a href="departments.jsp">部门总览</a></li>
-                                            <li><a href="department-detail.jsp">心脏病学</a></li>
-                                            <li><a href="department-detail.jsp">神经学</a></li>
-                                            <li><a href="department-detail.jsp">泌尿科学</a></li>
-                                            <li><a href="department-detail.jsp">妇科</a></li>
-                                            <li><a href="department-detail.jsp">儿科</a></li>
-                                            <li><a href="department-detail.jsp">实验室</a></li>
-                                            <li><a href="department-detail.jsp">部门介绍</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="current"><a href="blog.html">博客</a>
-                                        <!--                                    <ul>-->
-                                        <!--                                        <li><a href="blog-checkboard.jsp">棋盘布局</a></li>-->
-                                        <!--                                        <li><a href="blog-masonry.jsp">砌筑布局</a></li>-->
-                                        <!--                                        <li><a href="blog-two-col.jsp">两列布局</a></li>-->
-                                        <!--                                        <li><a href="blog-three-col.jsp">三列布局</a></li>-->
-                                        <!--                                        <li><a href="blog-four-col-wide.jsp">四列布局</a></li>-->
-                                        <!--                                        <li class="dropdown"><span>帖子类型</span>-->
-                                        <!--                                            <ul>-->
-                                        <!--                                                <li><a href="blog.html">图形发送</a></li>-->
-                                        <!--                                                <li><a href="blog-post-gallery.html">图库贴子</a></li>-->
-                                        <!--                                                <li><a href="blog-post-link.html">链接贴子</a></li>-->
-                                        <!--                                                <li><a href="blog-post-audio.html">音频贴子</a></li>-->
-                                        <!--                                                <li><a href="blog-post-quote.html">报价贴子</a></li>-->
-                                        <!--                                                <li><a href="blog-post-video.html">视频贴子</a></li>-->
-                                        <!--                                            </ul>-->
-                                        <!--                                        </li>-->
-                                        <!--                                    </ul>-->
+                                    <li><a href="doctors.jsp">医疗团队</a></li>
+                                    <li class="current"><a href="departments.html">部门</a> </li>
+                                    <li><a href="blog.html">博客</a>
                                     </li>
                                     <li class="dropdown"><span>商店</span>
                                         <ul>
                                             <li><a href="shop.jsp">商店</a></li>
-                                            <li><a href="shop-single.jsp">单个商品</a></li>
                                             <li><a href="shopping-cart.html">购物车</a></li>
-                                            <li><a href="checkout.jsp">结算</a></li>
                                             <li><a href="login.html">登录</a></li>
                                         </ul>
                                     </li>
@@ -141,7 +88,7 @@
                 <div class="auto-container">
                     <div class="main-box">
                         <div class="logo-box">
-                            <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
                         </div>
                         <!--Keep This Empty / Menu will come through Javascript-->
                     </div>
@@ -149,7 +96,7 @@
             </div><!-- End Sticky Menu -->
             <!-- Mobile Header -->
             <div class="mobile-header">
-                <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">
                     <div class="outer-box">
@@ -210,11 +157,8 @@
         <section class="page-title" style="background-image: url(images/background/8.jpg);">
             <div class="auto-container">
                 <div class="title-outer">
-                    <h1>Departments</h1>
-                    <ul class="page-breadcrumb">
-                        <li><a href="index.jsp">Home</a></li>
-                        <li>Departments</li>
-                    </ul>
+                    <h1>部门</h1>
+                    <ul class="page-breadcrumb"></ul>
                 </div>
             </div>
         </section>
@@ -223,104 +167,7 @@
         <section class="services-section-two">
             <div class="auto-container">
                 <div class="carousel-outer">
-                    <div class="row">
-                        <!-- service Block -->
-                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="department-detail.jsp"><img
-                                            src="images/resource/service-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="title-box"><span class="icon flaticon-heart-2"></span>
-                                        <h4><a href="department-detail.jsp">Cardiology Department</a></h4>
-                                    </div>
-                                    <div class="text">Introduction. Cardiology is the study heart conditions. The
-                                        Consultant with whom you have an appointment is a specialist.</div><span
-                                        class="icon-right flaticon-heart-2"></span>
-                                </div>
-                            </div>
-                        </div><!-- service Block -->
-                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="department-detail.jsp"><img
-                                            src="images/resource/service-2.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="title-box"><span class="icon flaticon-brain"></span>
-                                        <h4><a href="department-detail.jsp">Neurology Department</a></h4>
-                                    </div>
-                                    <div class="text">Introduction. Cardiology is the study heart conditions. The
-                                        Consultant with whom you have an appointment is a specialist.</div><span
-                                        class="icon-right flaticon-brain"></span>
-                                </div>
-                            </div>
-                        </div><!-- service Block -->
-                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="department-detail.jsp"><img
-                                            src="images/resource/service-3.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="title-box"><span class="icon flaticon-kidney"></span>
-                                        <h4><a href="department-detail.jsp">Urology Department</a></h4>
-                                    </div>
-                                    <div class="text">Introduction. Cardiology is the study heart conditions. The
-                                        Consultant with whom you have an appointment is a specialist.</div><span
-                                        class="icon-right flaticon-kidney"></span>
-                                </div>
-                            </div>
-                        </div><!-- service Block -->
-                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="department-detail.jsp"><img
-                                            src="images/resource/service-12.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="title-box"><span class="icon flaticon-ovum"></span>
-                                        <h4><a href="department-detail.jsp">Gynecological</a></h4>
-                                    </div>
-                                    <div class="text">Introduction. Cardiology is the study heart conditions. The
-                                        Consultant with whom you have an appointment is a specialist.</div><span
-                                        class="icon-right flaticon-ovum"></span>
-                                </div>
-                            </div>
-                        </div><!-- service Block -->
-                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="department-detail.jsp"><img
-                                            src="images/resource/service-10.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="title-box"><span class="icon flaticon-parents"></span>
-                                        <h4><a href="department-detail.jsp">Pediatrical</a></h4>
-                                    </div>
-                                    <div class="text">Introduction. Cardiology is the study heart conditions. The
-                                        Consultant with whom you have an appointment is a specialist.</div><span
-                                        class="icon-right flaticon-parents"></span>
-                                </div>
-                            </div>
-                        </div><!-- service Block -->
-                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="department-detail.jsp"><img
-                                            src="images/resource/service-11.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="title-box"><span class="icon flaticon-science"></span>
-                                        <h4><a href="department-detail.jsp">Laboratory</a></h4>
-                                    </div>
-                                    <div class="text">Introduction. Cardiology is the study heart conditions. The
-                                        Consultant with whom you have an appointment is a specialist.</div><span
-                                        class="icon-right flaticon-science"></span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row" id="department_container">
                     </div>
                 </div>
             </div>
@@ -559,6 +406,54 @@
     <script src="js/owl.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        init();
+        function init(){
+            if(localStorage.getItem("healthy_care_token") == null){
+                window.location.replace("login.html")
+            }
+            getDepartments();
+        }
+        function getDepartments(){
+            let request = new XMLHttpRequest();
+            request.open("POST", "./DepartmentServlet", true);
+            request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            request.onreadystatechange = function () {
+                if(request.readyState === 4 && request.status === 200){
+                    let response = JSON.parse(request.responseText);
+                    if(response.code === 200){
+                        setDepartmentContent(response.data);
+                    }else{
+                        alert(response.message + "\n" + response.data);
+                    }
+                }
+            }
+            request.send("action=getAll");
+        }
+        function setDepartmentContent(data){
+            let departmentContainer = $("#department_container")
+            let content = "";
+            for (let i = 0; i < data.length; i++) {
+                content = content +
+                    `<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="department-detail.jsp"><img
+                                            src="images/resource/service-1.jpg" alt=""></a></figure>
+                                </div>
+                                <div class="lower-content">
+                                    <div class="title-box"><span class="icon flaticon-heart-2"></span>
+                                        <h4><a href="department-detail.jsp">${data[i].name}</a></h4>
+                                    </div>
+                                    <div class="text">${data[i].description}</div><span
+                                        class="icon-right flaticon-heart-2"></span>
+                                </div>
+                            </div>
+                        </div>`
+            }
+            departmentContainer.html(content)
+        }
+    </script>
 </body>
 
 </html>

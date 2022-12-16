@@ -18,9 +18,10 @@ class CustomerDao: ICustomerDao {
                         customer_name = getString("cus_name"),
                         gender = getInt("gender"),
                         email =  getString("email")
-                    )
+                    ).also{close()}
                 }
             }else{
+                db.close()
                 return null
             }
         }catch (e: Throwable){
@@ -41,8 +42,8 @@ class CustomerDao: ICustomerDao {
         DBUtil().apply {
             openConnection()
             return getInsertObjectIDs(sql).let{
-                    if (it.first()) it.getInt(1)
-                    else -1
+                    if (it.first()) {close(); it.getInt(1)}
+                    else {close(); -1}
                 }
         }
     }

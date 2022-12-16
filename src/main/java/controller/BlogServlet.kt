@@ -18,7 +18,7 @@ class BlogServlet: HttpServlet() {
 
 
     override fun doGet(req: HttpServletRequest, resp: HttpServletResponse) {
-        super.doGet(req, resp)
+        doPost(req, resp)
     }
 
 
@@ -29,7 +29,15 @@ class BlogServlet: HttpServlet() {
         when(type.trim()){
             "search" -> search(req, resp)
             "add" -> add(req, resp)
+            "getComments" -> getComments(req, resp)
             else -> {}
+        }
+    }
+    private fun getComments(req: HttpServletRequest, resp: HttpServletResponse){
+        val blogId = req.getParameter("blog_id").toInt()
+        val token = req.getHeader("token")
+        resp.writer.apply {
+            var res = BlogService().getComments(blogId, token)
         }
     }
     private fun search(req: HttpServletRequest, resp: HttpServletResponse){

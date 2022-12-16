@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>行之 | 你的医疗助手 | 首页</title><!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
+    <!-- REVOLUTION SETTINGS STYLES -->
+    <link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+    <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"><!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script>
+        function logout(){
+            localStorage.removeItem("healthy_care_token")
+            window.location.reload("login.html");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader"></div><!-- Main Header-->
+        <header class="main-header header-style-one">
+            <!-- Header top -->
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="top-left">
+                            <ul class="contact-list clearfix">
+                                <li><i class="flaticon-hospital-1"></i>西安邮电大学 </li>
+                                <li><i class="flaticon-back-in-time"></i>全天24小时营业</li>
+                            </ul>
+                        </div>
+                        <div class="top-right">
+                            <ul class="social-icon-one">
+                                <li><a href="#"><span class="fab fa-weixin"></span></a></li>
+                                <li><a href="#"><span class="fab fa-qq"></span></a></li>
+                                <li><a href="#"><span class="fab fa-weibo"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Header Top -->
+            <!-- Header Lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <!-- Main box -->
+                    <div class="main-box">
+                        <div class="logo-box">
+                            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                        </div>
+                        <!--Nav Box-->
+                        <div class="nav-outer">
+                            <nav class="nav main-menu">
+                                <ul class="navigation" id="navbar">
+                                    <li class="current"><span>主页</span></li>
+                                    <li class="dropdown"><span>关于</span>
+                                        <ul>
+                                            <li><a href="about-us.jsp">关于我们</a></li>
+                                            <li><a href="services.jsp">服务</a></li>
+                                            <li><a href="elements.jsp">更多内容</a></li>
+                                            <li><a href="terms-and-condition.jsp">我们的团队</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="doctors.jsp">医生团队</a></li>
+                                    <li><a href="departments.html">部门</a></li>
+                                    <li><a href="blog.html">博客</a>
+                                    </li>
+                                    <li class="dropdown"><span>商店</span>
+                                        <ul>
+                                            <li><a href="merchandiseServlet?action=list">商店</a></li>
+                                            <li><a href="shopping-cart.html">购物车</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.jsp">联系我们</a></li>
+                                </ul>
+                            </nav><!-- Main Menu End-->
+                            <div class="outer-box">
+                                <button class="search-btn">
+                                <span class="fa fa-search"></span>
+                                </button>
+                                <button class="btn" onclick="logout()">
+                                <span class="fa fa-power-off"></span>
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Sticky Header -->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="main-box">
+                        <div class="logo-box">
+                            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                        </div>
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </div>
+                </div>
+            </div><!-- End Sticky Menu -->
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                <!--Nav Box-->
+                <div class="nav-outer clearfix">
+                    <div class="outer-box">
+                        <!-- Search Btn -->
+                        <div class="search-box"><button class="search-btn mobile-search-btn"><i
+                                    class="flaticon-magnifying-glass"></i></button></div><a href="#nav-mobile"
+                            class="mobile-nav-toggler navbar-trigger"><span class="fa fa-bars"></span></a>
+                    </div>
+                </div>
+            </div><!-- Mobile Nav -->
+            <div id="nav-mobile"></div><!-- Header Search -->
+            <div class="search-popup"><span class="search-back-drop"></span><button class="close-search"><span
+                        class="fa fa-times"></span></button>
+                <div class="search-inner">
+                    <form method="post" action="blog-showcase.html">
+                        <div class="form-group"><input type="search" name="search-field" value=""
+                                placeholder="Search..." required=""><button type="submit"><i
+                                    class="flaticon-magnifying-glass"></i></button></div>
+                    </form>
+                </div>
+            </div><!-- End Header Search -->
+            </div>
+        </header>
+        <!--End Main Header -->
+        <!--Main Slider-->
+        <section class="main-slider">
+            <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
+                <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
+                    <ul>
+                        <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off"
+                            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                            data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
+                            data-description="">
+                            <!-- MAIN IMAGE --><img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="20"
+                                data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
+                                src="images/main-slider/1.jpg">
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]"
+                                data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+                                data-type="text" data-height="none" data-width="['750','750','750','650']"
+                                data-whitespace="normal" data-hoffset="['0','0','0','0']"
+                                data-voffset="['-180','-170','-180','-180']" data-x="['left','left','left','left']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <span class="title">欢迎</span></div>
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]"
+                                data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]"
+                                data-responsive_offset="on" data-type="text" data-height="none"
+                                data-width="['750','750','750','650']" data-whitespace="normal"
+                                data-hoffset="['0','0','0','0']" data-voffset="['-100','-95','-100','-115']"
+                                data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <h2>我们可以帮助维护<br>您的身体健康</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- End Main Slider-->
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="auto-container">
+                <div class="sec-title text-center"><span class="sub-title">我们可以提供的服务</span>
+                </div>
+                <div class="row">
+                    <!-- Service Block -->
+                    <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box"><span class="icon flaticon-heartbeat"></span>
+                            <h5><a href="#">在线检查</a></h5>
+                            <div class="text">我们提供了专业的在线医疗团队，为您提供专业的疾病治疗建议</div>
+                        </div>
+                    </div><!-- Service Block -->
+                    <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box"><span class="icon flaticon-surgery-room"></span>
+                            <h5><a href="#">医学百科</a></h5>
+                            <div class="text">为您提供各种生活上需要注意的关乎身体健康的小信息</div>
+                        </div>
+                    </div><!-- Service Block -->
+                    <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box"><span class="icon flaticon-pharmacy"></span>
+                            <h5><a href="#">在线购药</a></h5>
+                            <div class="text">对于一些不太常见的药物，不必再走遍大街小巷去药店询问，我们可以为您提供</div>
+                        </div>
+                    </div><!-- Service Block -->
+                    <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box"><span class="icon flaticon-lab"></span>
+                            <h5><a href="#">心理咨询</a></h5>
+                            <div class="text">您随时可以联系我们，和我们交流，排解烦恼，我们会提供专业的心理治疗建议</div>
+                        </div>
+                    </div><!-- Service Block -->
+                </div>
+            </div>
+        </section>
+        <!--End Services Section -->
+        <!-- Clients Section -->
+        <section class="clients-section">
+            <div class="auto-container">
+                <!-- Sponsors Outer -->
+                <div class="sponsors-outer">
+                    <!--clients carousel-->
+                    <ul class="clients-carousel owl-carousel owl-theme">
+                        <li class="slide-item"><a href="#"><img src="images/clients/1.png" alt=""></a></li>
+                        <li class="slide-item"><a href="#"><img src="images/clients/2.png" alt=""></a></li>
+                        <li class="slide-item"><a href="#"><img src="images/clients/3.png" alt=""></a></li>
+                        <li class="slide-item"><a href="#"><img src="images/clients/4.png" alt=""></a></li>
+                        <li class="slide-item"><a href="#"><img src="images/clients/5.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Clients Section -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!--Widgets Section-->
+            <div class="widgets-section" style="background-image: url(images/background/7.jpg);">
+                <div class="auto-container">
+                    <div class="row">
+                        <!--Big Column-->
+                        <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <!--Footer Column-->
+                                <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="footer-widget about-widget">
+                                        <div class="logo"><a href="index.html"><img src="images/logo-2.png"
+                                                    alt="" /></a></div>
+                                        <div class="text">
+                                            <p>Our Clinic has grown to provide a world class facility for the clinic
+                                                advanced restorative. </p>
+                                            <p>We are among the most qualified implant providers in the AUS with over 30
+                                                years of quality training and experience.</p>
+                                        </div>
+                                        <ul class="social-icon-three">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Footer Column-->
+                                <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="footer-widget">
+                                        <h2 class="widget-title">Departments</h2>
+                                        <ul class="user-links">
+                                            <li><a href="#">Surgery & Radiology</a></li>
+                                            <li><a href="#">Family Medicine</a></li>
+                                            <li><a href="#">Women’s Health</a></li>
+                                            <li><a href="#">Optician</a></li>
+                                            <li><a href="#">Pediatrics</a></li>
+                                            <li><a href="#">Dermatology</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Big Column-->
+                        <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row">
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                    <!--Footer Column-->
+                                    <div class="footer-widget recent-posts">
+                                        <h2 class="widget-title">Latest News</h2>
+                                        <!--Footer Column-->
+                                        <div class="widget-content">
+                                            <div class="post">
+                                                <div class="thumb"><a href="blog-post-image.jsp"><img
+                                                        src="images/resource/post-thumb-1.jpg" alt=""></a></div>
+                                                <h4><a href="blog-post-image.jsp">Integrative Medicine <Br>& Cancer
+                                                        Treatment.</a></h4><span class="date">July 11,2019</span>
+                                            </div>
+                                            <div class="post">
+                                                <div class="thumb"><a href="blog-post-image.jsp"><img
+                                                        src="images/resource/post-thumb-2.jpg" alt=""></a></div>
+                                                <h4><a href="blog-post-image.jsp">Achieving Better <br>Health Care
+                                                        Time.</a></h4><span class="date">August 1,2019</span>
+                                            </div>
+                                            <div class="post">
+                                                <div class="thumb"><a href="blog-post-image.jsp"><img
+                                                        src="images/resource/post-thumb-3.jpg" alt=""></a></div>
+                                                <h4><a href="blog-post-image.jsp">Great Health Care <br>For
+                                                        Patients.</a></h4><span class="date">August 1,2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                    <!--Footer Column-->
+                                    <div class="footer-widget contact-widget">
+                                        <h2 class="widget-title">Contact Us</h2>
+                                        <!--Footer Column-->
+                                        <div class="widget-content">
+                                            <ul class="contact-list">
+                                                <li><span class="icon flaticon-placeholder"></span>
+                                                    <div class="text">2130 Fulton Street San Diego <Br>CA 94117-1080 USA
+                                                    </div>
+                                                </li>
+                                                <li><span class="icon flaticon-call-1"></span>
+                                                    <div class="text">Mon to Fri:08:30 - 18:00</div><a
+                                                        href="tel:+89868679575"><strong>+898 68679 575</strong></a>
+                                                </li>
+                                                <li><span class="icon flaticon-email"></span>
+                                                    <div class="text">Do you have a Question?<br><a
+                                                            href="mailto:info@gmail.com"><strong>info@gmail.com</strong></a>
+                                                    </div>
+                                                </li>
+                                                <li><span class="icon flaticon-back-in-time"></span>
+                                                    <div class="text">Mon - Sat 8.00 - 18.00<br><strong>Sunday
+                                                            CLOSED</strong></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+                <!-- Scroll To Top -->
+                <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span>
+                </div>
+                <div class="auto-container">
+                    <div class="inner-container clearfix">
+                        <div class="footer-nav">
+                            <ul class="clearfix">
+                                <li><a href="index.html">Privacy Policy</a></li>
+                                <li><a href="about-us.jsp">Contact</a></li>
+                                <li><a href="services.jsp">Supplier</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-text">
+                            <p>Copyright © 2019 <a href="http://www.bootstrapmb.com/">bootstrapmb</a>All Rights
+                                Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End Main Footer -->
+    </div><!-- End Page Wrapper -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!--Revolution Slider-->
+    <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="js/main-slider-script.js"></script>
+    <!--Revolution Slider-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/mmenu.polyfills.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        init();
+        function init(){
+            let token = localStorage.getItem("healthy_care_token")
+            if(token == null) window.location.replace("login.html")
+        }
+    </script>
+</body>
+
+</html>

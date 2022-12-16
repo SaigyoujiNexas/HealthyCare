@@ -47,6 +47,7 @@
                     if(response.code === 200){
                         alert("登陆成功")
                         localStorage.setItem("healthy_care_token", response.data)
+                        window.location.replace("index.html");
                     }else{
                         alert(response.message + "\n" + response.data)
                     }
@@ -99,13 +100,12 @@
                 <div class="auto-container">
                     <div class="main-box">
                         <div class="logo-box">
-                            <div class="logo"><a href="index.jsp"><img src="images/logo-9.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="images/logo-9.png" alt="" title=""></a></div>
                         </div>
                         <!--Keep This Empty / Menu will come through Javascript-->
                     </div>
                 </div>
             </div><!-- End Sticky Menu -->
-            </div><!-- End Sidebar Cart -->
         </header>
         <!--End Main Header -->
         <!--Page Title-->
@@ -114,7 +114,7 @@
                 <div class="title-outer">
                     <h1>行之</h1>
                     <ul class="page-breadcrumb">
-                        <li><a href="index.jsp">医疗解决方案</a></li>
+                        <li><a href="index.html">医疗解决方案</a></li>
                         <li>登录</li>
                     </ul>
                 </div>

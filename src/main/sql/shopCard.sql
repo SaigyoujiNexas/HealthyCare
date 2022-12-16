@@ -41,6 +41,7 @@ create table `department` (
     `department_id` int(11) NOT NULL AUTO_INCREMENT,
     `department_name` varchar(100) not null default '',
     `department_description` varchar(300) not null default '',
+    `department_image` varchar(100) not null default '',
     primary key (`department_id`) using btree
 )engine = InnoDB auto_increment = 1 character set = utf8mb4 collate = utf8mb4_bin row_format = COMPACT;
 

@@ -41,12 +41,12 @@
             <div class="auto-container"><!-- Main box -->
                 <div class="main-box">
                     <div class="logo-box">
-                        <div class="logo"><a href="index.jsp"><img alt="" src="images/logo-9.png" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img alt="" src="images/logo-9.png" title=""></a></div>
                     </div><!--Nav Box-->
                     <div class="nav-outer">
                         <nav class="nav main-menu">
                             <ul class="navigation" id="navbar">
-                                <li><a href="index.jsp">主页</a>
+                                <li><a href="index.html">主页</a>
 <!--                                    <ul>-->
 <!--                                        <li><a href="index.html">主页 医疗</a></li>-->
 <!--                                        <li><a href="index-2.html">主页 门诊</a></li>-->
@@ -55,36 +55,16 @@
 <!--                                        <li><a href="index-5.html">主页 产前护理</a></li>-->
 <!--                                    </ul>-->
                                 </li>
-                                <li class="dropdown"><span>页面</span>
+                                <li class="dropdown"><span>关于</span>
                                     <ul>
                                         <li><a href="about-us.jsp">关于我们</a></li>
                                         <li><a href="services.jsp">服务</a></li>
-                                        <li><a href="gallery.jsp">图片</a></li>
-                                        <li><a href="pricing-table.jsp">价格表</a></li>
                                         <li><a href="elements.jsp">更多内容</a></li>
-                                        <li><a href="coming-soon.jsp">Coming Soon</a></li>
-                                        <li><a href="error-page.jsp">404页面</a></li>
                                         <li><a href="terms-and-condition.jsp">我们的团队</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><span>医生</span>
-                                    <ul>
-                                        <li><a href="doctors.jsp">医生简介</a></li>
-                                        <li><a href="doctor-detail.jsp">医生图片</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><span>部门</span>
-                                    <ul>
-                                        <li><a href="departments.jsp">部门总览</a></li>
-                                        <li><a href="department-detail.jsp">心脏病学</a></li>
-                                        <li><a href="department-detail.jsp">神经学</a></li>
-                                        <li><a href="department-detail.jsp">泌尿科学</a></li>
-                                        <li><a href="department-detail.jsp">妇科</a></li>
-                                        <li><a href="department-detail.jsp">儿科</a></li>
-                                        <li><a href="department-detail.jsp">实验室</a></li>
-                                        <li><a href="department-detail.jsp">部门介绍</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="doctors.jsp">医生团队</a></li>
+                                <li><a href="departments.html">部门</a></li>
                                 <li class="current"><a href="blog.html">博客</a>
 <!--                                    <ul>-->
 <!--                                        <li><a href="blog-checkboard.jsp">棋盘布局</a></li>-->
@@ -107,9 +87,7 @@
                                 <li class="dropdown"><span>商店</span>
                                     <ul>
                                         <li><a href="shop.jsp">商店</a></li>
-                                        <li><a href="shop-single.jsp">单个商品</a></li>
                                         <li><a href="shopping-cart.html">购物车</a></li>
-                                        <li><a href="checkout.jsp">结算</a></li>
                                         <li><a href="login.html">登录</a></li>
                                     </ul>
                                 </li>
@@ -129,12 +107,12 @@
             <div class="auto-container">
                 <div class="main-box">
                     <div class="logo-box">
-                        <div class="logo"><a href="index.jsp"><img alt="" src="images/logo.png" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img alt="" src="images/logo.png" title=""></a></div>
                     </div><!--Keep This Empty / Menu will come through Javascript--></div>
             </div>
         </div><!-- End Sticky Menu --><!-- Mobile Header -->
         <div class="mobile-header">
-            <div class="logo"><a href="index.jsp"><img alt="" src="images/logo.png" title=""></a></div><!--Nav Box-->
+            <div class="logo"><a href="index.html"><img alt="" src="images/logo.png" title=""></a></div><!--Nav Box-->
             <div class="nav-outer clearfix">
                 <div class="outer-box"><!-- Search Btn -->
                     <div class="search-box">
@@ -196,7 +174,7 @@
         <div class="auto-container">
             <div class="title-outer"><h1>行之</h1>
                 <ul class="page-breadcrumb">
-                    <li><a href="index.jsp">医疗健康解决方案</a></li>
+                    <li><a href="index.html">医疗健康解决方案</a></li>
                     <li>wiki</li>
                 </ul>
             </div>
@@ -428,6 +406,9 @@
         init()
 
          function init() {
+            if(localStorage.getItem("healthy_care_token") == null){
+                window.location.replace("login.html");
+            }
              const data =  getWikiContent();
              setWikiContent(data)
         }
